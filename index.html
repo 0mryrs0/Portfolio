@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav id="navigation">
+        <div>
+            <h1>MRYRS</h1>
+        </div>
+        <div id="links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Projects</a>
+            <a href="#blog">Contacts</a>
+        </div>
+        <a href="https://github.com/0mryrs0" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #ffdb89;"></i></a>
+        <i class="fa-solid fa-moon" style="color: #ffffff; " id="theme"></i>
+        <div class="toggle">
+            <i class="fa-solid fa-bars" style="color: #FFDB89;" id="toggle-btn"></i>
+            
+            <div id="dropdown">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Projects</a>
+                <a href="#blog">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div>
+            <h2 data-text = "console.log(“Welcome”);">console.log(“Welcome”);</h2>
+            <img src="img/dev.svg" id="dev">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>about me</h2>
+            <div class="personal-data">
+                <img src="img/pfp.png">
+                <h4>Mary Rose Estrella.</h4>
+                <p>A 3rd-year college student taking a bachelor's degree in Information Systems and an aspiring front-end developer. An individual who is passionate about seeking and learning various knowledge and skills that will help me achieve my dreams.</p>
+            </div>
+            <div class="skills-tech">
+                <div class="skills">
+                    <h4>Skills:</h4>
+                    <div class="grid-container">
+                        <div class="skill-box">
+                            <h5>communication</h5>
+                        </div>
+                        <div class="skill-box">
+                            <h5>management</h5>
+                        </div>
+                        <div class="skill-box">
+                            <h5>graphic design</h5>
+                        </div>
+                        <div class="skill-box">
+                            <h5>communication</h5>
+                        </div>
+                        <div class="skill-box">
+                            <h5>management</h5>
+                        </div>
+                        <div class="skill-box">
+                            <h5>graphic design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech">
+                    <h4>Technologies:</h4>
+                    <div class="grid-container2">
+                        <div class="skill-box2">
+                            <img src="img/html.svg" class="icon">
+                            <h6>html</h6>
+                        </div>
+                        <div class="skill-box2">
+                            <img src="img/css.svg" class="icon">
+                            <h6>css</h6>
+                        </div>
+                        <div class="skill-box2">
+                            <img src="img/bootstrap.svg" class="icon">
+                            <h6>bootstrap</h6>
+                        </div>
+                        <div class="skill-box2">
+                            <img src="img/js.svg" class="icon">
+                            <h6>javascript</h6>
+                        </div>
+                        <div class="skill-box2">
+                            <img src="img/figma.svg" class="icon">
+                            <h6>figma</h6>
+                        </div>
+                        <div class="skill-box2">
+                            <img src="img/canva.svg" class="icon">
+                            <h6>canva</h6>
+                        </div>
+                        <div class="skill-box2">
+                            <img src="img/illustrator.svg" class="icon">
+                            <h6>illustrator</h6>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <a href="https://drive.google.com/file/d/1NAciVeNnQ1niUv2h5anX0sife8bn6UzN/view?usp=sharing" id="cv" download="Estrella_Resume">download cv</a>
+
+            </div>
+            
+        </div>
+        
+    </section>
+    <script src="toggle.js"></script>
+    <script src="theme.js"></script>
+    
+</body>
+</html>
