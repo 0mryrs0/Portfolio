@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     scroll-behavior: smooth;
     flex-wrap: wrap;
+    
 
 }
 
@@ -43,48 +44,7 @@ a {
     color: var(--text-light);
 }
 
-.skill-box {
-    width:150px;
-    height: 40px;
-    color: var(--text2);
-    background-color: var(--bg2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
 
-.skill-box2 {
-    width:80px;
-    height: 80px;
-    color: var(--text2);
-    background-color: var(--bg2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    border-bottom: 1px solid var(--text-light);
-    gap:.2rem;
-}
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    height:100px
-
-}
-
-.grid-container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    justify-content: center;
-    gap: .6rem;
-    height:200px
-    
-}
 
 .icon {
     width: 35px;
@@ -92,7 +52,7 @@ a {
 
 /*NAVBAR_START*/
 nav {
-    width: 100%;
+    width: 100vw;
     display: flex;
     position:fixed;
     justify-content: space-around;
@@ -100,6 +60,7 @@ nav {
     padding: 1rem;
     z-index: 500;
     border-bottom: 1px solid white;
+    overflow: hidden;
 }
 
 #navigation {
@@ -168,6 +129,7 @@ nav .toggle #dropdown a:hover {
     background-position-x: center;
     background-position-y: bottom;
     background-size: cover;
+    overflow: hidden;
 }
 #home div{
     width: 100%;
@@ -222,6 +184,50 @@ nav .toggle #dropdown a:hover {
 /*HOME END*/
 
 /*About*/
+
+.skill-box {
+    width:150px;
+    height: 40px;
+    color: var(--text2);
+    background-color: var(--bg2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.skill-box2 {
+    width:80px;
+    height: 80px;
+    color: var(--text2);
+    background-color: var(--bg2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border-bottom: 1px solid var(--text-light);
+    gap:.2rem;
+}
+
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-container2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    justify-content: center;
+    gap: .6rem;
+    
+  
+}
 #about {
     width: 100vw;
     height: 100vh;
@@ -231,14 +237,12 @@ nav .toggle #dropdown a:hover {
     background-position-y: bottom;
     background-size: cover;
     padding: 2rem;
-    overflow: scroll;
-
-    
+ 
 }
 #about .container {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
@@ -301,6 +305,8 @@ nav .toggle #dropdown a:hover {
 }
 
 
+
+
 /*About END*/
 
 /*PROJECT START*/
@@ -314,6 +320,7 @@ nav .toggle #dropdown a:hover {
     background-size: cover;
     padding: 2rem;
     margin: 2rem;
+    
 }
 
 #projects .container {
@@ -322,6 +329,8 @@ nav .toggle #dropdown a:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 #projects .container h2 {
@@ -396,7 +405,7 @@ nav .toggle #dropdown a:hover {
     background-position-y: bottom;
     background-size: cover;
     padding: 2rem;
-    overflow: scroll;
+    overflow: hidden;
 
     
 }
@@ -440,7 +449,7 @@ nav .toggle #dropdown a:hover {
     padding: 2rem 2rem;
 }
 
-#contact .container .form form input[type="email"], #contact .container .form form textarea {
+#contact .container .form form input[type="text"], #contact .container .form form textarea {
     width: 100%;
     border:1px solid #BBA882;
     background-color: var(--bg2);
@@ -469,6 +478,23 @@ nav .toggle #dropdown a:hover {
 
 #contact .container .socials > *{
     margin: .5rem;
+}
+
+footer {
+    width: 100vw;
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    color: #FFDB89;
+    padding: 4rem;
+    overflow: hidden;
+}
+
+footer h6 {
+    margin-bottom: .7rem;
+}
+
+footer h6 i {
+    margin: .3rem;
 }
 
 

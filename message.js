@@ -20,12 +20,15 @@ const db = getDatabase(app);
 
 document.getElementById("submit").addEventListener("click", function(e) {
   e.preventDefault();
-  set(ref(db, `message/` + document.getElementById(`email`).value),
+  set(ref(db, `message/` + document.getElementById(`name`).value),
   {
-    email: document.getElementById(`email`).value,
+    name: document.getElementById(`name`).value,
     message: document.getElementById(`message`).value
   });
 
   alert("Your message was sent to Mary Rose");
+
+  document.getElementById(`name`).value = "";
+  document.getElementById(`message`).value = "";
 
 })
