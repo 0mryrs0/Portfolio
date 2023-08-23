@@ -365,6 +365,7 @@ nav .toggle #dropdown a:hover {
     border-right: 1px solid var(--text-light);
     border-bottom: 1px solid var(--text-light);
     border-radius: 20px;
+    color: #ffffff80;
 
 }
 
