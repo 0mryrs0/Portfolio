@@ -217,6 +217,7 @@ nav .toggle #dropdown a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    
 }
 
 .grid-container2 {
@@ -225,6 +226,7 @@ nav .toggle #dropdown a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     justify-content: center;
     gap: .6rem;
+    
     
   
 }
@@ -237,6 +239,8 @@ nav .toggle #dropdown a:hover {
     background-position-y: bottom;
     background-size: cover;
     padding: 2rem;
+    overflow: scroll;
+    
  
 }
 #about .container {
@@ -330,6 +334,7 @@ nav .toggle #dropdown a:hover {
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
     
 }
 
@@ -345,10 +350,12 @@ nav .toggle #dropdown a:hover {
 }
 
 #projects .container .project-detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
 
 }
 .project-card {
